@@ -1,0 +1,24 @@
+TIME BEGIN: 2004-01-01
+TIME END:   2022-02-16
+
+REGION: 
+
+INDEX: 100
+
+SUGGESTIONS:
+
+chinese go professional
+go professional
+
+KEYWORDS:
+
+Ke Jie
+Gu Zihao
+Ding Hao
+Yang Dingxin
+Mi Yuting
+Fan Tingyu
+Jiang Weijie
+Lian Xiao
+Zhao Chenyu
+Xie Erhao
