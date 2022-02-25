@@ -1,0 +1,122 @@
+KEY: AIzaSyCrELvdgDzNZOvgzHfYZW-GKf79XYVDNxY
+CX:  2b4da3e989c277e77
+
+TIME BEGIN: 2004-01-01
+TIME END:   2022-02-16
+
+REGION: US
+
+INDEX: 1
+
+SUGGESTIONS:
+
+CEO
+Chief Executive Officer
+Chairman
+Owner
+President
+Businessman
+
+KEYWORDS:
+
+3M Company
+A.O. Smith Corp
+Abbott Laboratories
+AbbVie Inc.
+Accenture plc
+Activision Blizzard
+Acuity Brands Inc
+Adobe Systems Inc
+Advance Auto Parts
+Advanced Micro Devices Inc
+AES Corp
+Aetna Inc
+Affiliated Managers Group Inc
+AFLAC Inc
+Agilent Technologies Inc
+Air Products & Chemicals Inc
+Akamai Technologies Inc
+Alaska Air Group Inc
+Albemarle Corp
+Alexandria Real Estate Equities Inc
+Alexion Pharmaceuticals
+Align Technology
+Allegion
+Allergan, Plc
+Alliance Data Systems
+Alliant Energy Corp
+Allstate Corp
+Alphabet Inc Class A
+Alphabet Inc Class C
+Altria Group Inc
+Amazon.com Inc
+Ameren Corp
+American Airlines Group
+American Electric Power
+American Express Co
+American International Group, Inc.
+American Tower Corp A
+American Water Works Company Inc
+Ameriprise Financial
+AmerisourceBergen Corp
+AMETEK Inc
+Amgen Inc
+Amphenol Corp
+Anadarko Petroleum Corp
+Analog Devices, Inc.
+Andeavor
+ANSYS
+Anthem Inc.
+Aon plc
+Apache Corporation
+Apartment Investment & Management
+Apple Inc.
+Applied Materials Inc
+Aptiv Plc
+Archer-Daniels-Midland Co
+Arconic Inc
+Arthur J. Gallagher & Co.
+Assurant Inc
+AT&T Inc
+Autodesk Inc
+Automatic Data Processing
+AutoZone Inc
+AvalonBay Communities, Inc.
+Avery Dennison Corp
+Baker Hughes, a GE Company
+Ball Corp
+Bank of America Corp
+Baxter International Inc.
+BB&T Corporation
+Becton Dickinson
+Berkshire Hathaway
+Best Buy Co. Inc.
+Biogen Inc.
+BlackRock
+Block H&R
+Boeing Company
+BorgWarner
+Boston Properties
+Boston Scientific
+Brighthouse Financial Inc
+Bristol-Myers Squibb
+Broadcom
+Brown-Forman Corp.
+C. H. Robinson Worldwide
+CA, Inc.
+Cabot Oil & Gas
+Cadence Design Systems
+Campbell Soup
+Capital One Financial
+Cardinal Health Inc.
+Carmax Inc
+Carnival Corp.
+Caterpillar Inc.
+CBOE Holdings
+CBRE Group
+CBS Corp.
+Celgene Corp.
+Centene Corporation
+CenterPoint Energy
+CenturyLink Inc
+

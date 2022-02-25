@@ -1,6 +1,6 @@
 # Created by Dayu Wang (dwang@stchas.edu) on 2022-02-23
 
-# Last updated by Dayu Wang (dwang@stchas.edu) on 2022-02-23
+# Last updated by Dayu Wang (dwang@stchas.edu) on 2022-02-25
 
 import tkinter
 from datetime import datetime
@@ -20,7 +20,7 @@ def main():
     # Read the data from the input file.
     lines = input_file.readlines()
     time_begin, time_end, region, index, stage = None, None, None, None, None
-    suggestions = []
+    suggestions, final_suggestion = [], None
     for line in lines:
         line = line.strip()
         if not line:  # Skip empty lines
@@ -31,10 +31,13 @@ def main():
                 current_keyword, refined_keyword = line, line
 
                 # Get the closest search keyword.
+                num_of_suggestions = len(pytrends.suggestions(current_keyword))
                 for suggestion in pytrends.suggestions(current_keyword):
-                    if suggestion["type"].strip().lower() in suggestions:
-                        refined_keyword = suggestion["mid"].strip()
-                        break
+                    for sug in suggestions:
+                        if sug in suggestion["type"].strip().lower():
+                            refined_keyword = suggestion["mid"].strip()
+                            final_suggestion = suggestion["type"].strip().lower()
+                            break
 
                 # Search the current keyword using Google Trends.
                 pytrends.build_payload([refined_keyword], timeframe=time_begin + ' ' + time_end, geo=region)
@@ -42,11 +45,14 @@ def main():
 
                 # Prepare and save the result to the output file.
                 now = datetime.now().strftime("%Y-%m-%dT%H%M")
-                o_filename = '!' if current_keyword == refined_keyword else ''
+                o_filename = '' if num_of_suggestions == 0 or current_keyword != refined_keyword else '!'
                 o_filename += (("%03d - " % index) + current_keyword + " - " + now + " - CSV.csv").replace(' ', '_')
                 index += 1
                 if not result.empty:
-                    result.rename(columns={refined_keyword: current_keyword}, inplace=True)
+                    new_col_name = current_keyword
+                    if final_suggestion is not None:
+                        new_col_name += " (" + final_suggestion + ')'
+                    result.rename(columns={refined_keyword: new_col_name}, inplace=True)
                     result.drop(labels=["isPartial"], axis=1, inplace=True)
                 result.to_csv(o_filename)
                 print("File \"%s\" created" % o_filename)

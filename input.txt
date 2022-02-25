@@ -3,22 +3,17 @@ TIME END:   2022-02-16
 
 REGION: 
 
-INDEX: 100
+INDEX: 1
 
 SUGGESTIONS:
 
-chinese go professional
-go professional
+CEO
+Chief Executive Officer
+Chairman
+Owner
+President
+Businessman
 
 KEYWORDS:
 
-Ke Jie
-Gu Zihao
-Ding Hao
-Yang Dingxin
-Mi Yuting
-Fan Tingyu
-Jiang Weijie
-Lian Xiao
-Zhao Chenyu
-Xie Erhao
+Jim Dugan
