@@ -1,6 +1,6 @@
 # Created by Dayu Wang (dwang@stchas.edu) on 2022-02-25
 
-# Last updated by Dayu Wang (dwang@stchas.edu) on 2022-02-25
+# Last updated by Dayu Wang (dwang@stchas.edu) on 2022-02-26
 
 
 import json
@@ -54,7 +54,7 @@ def main():
 
                 # Get the closest search keyword.
                 final_suggestion = None
-                num_of_suggestions = len(pytrends.suggestions(current_keyword))
+                # num_of_suggestions = len(pytrends.suggestions(current_keyword))
                 for suggestion in pytrends.suggestions(current_keyword):
                     for sug in suggestions:
                         if sug in suggestion["type"].strip().lower():
@@ -68,8 +68,9 @@ def main():
 
                 # Prepare and save the result to the output file.
                 now = datetime.now().strftime("%Y-%m-%dT%H%M")
-                o_filename = '' if num_of_suggestions == 0 or current_keyword != refined_keyword else '!'
-                o_filename += (("%03d - " % index) + current_keyword + " - " + now + " - CSV.csv").replace(' ', '_')
+                o_filename = '' if current_keyword != refined_keyword else '!'
+                o_filename += (("%03d - " % index) + current_keyword + " - " + now + " - CSV.csv") \
+                    .replace(' ', '_').replace('|', '')
                 index += 1
                 if not result.empty:
                     new_col_name = current_keyword

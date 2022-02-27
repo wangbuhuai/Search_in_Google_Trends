@@ -29,14 +29,24 @@ def main():
         if colon == -1:
             if stage == "KEYWORDS":
                 current_keyword, refined_keyword = line, line
+                split_name = line.split()
 
                 # Get the closest search keyword.
-                num_of_suggestions = len(pytrends.suggestions(current_keyword))
+                suggestion_applied = False
+                final_suggestion = None
                 for suggestion in pytrends.suggestions(current_keyword):
+                    tokens = suggestion["title"].split()
+                    count = 0
+                    for token in split_name:
+                        if token in tokens:
+                            count += 1
+                    if count < 2:
+                        continue
+                    suggestion_applied = True
                     for sug in suggestions:
                         if sug in suggestion["type"].strip().lower():
                             refined_keyword = suggestion["mid"].strip()
-                            final_suggestion = suggestion["type"].strip().lower()
+                            final_suggestion = ("%s (%s)" % (suggestion["title"], suggestion["type"])).strip()
                             break
 
                 # Search the current keyword using Google Trends.
@@ -45,13 +55,16 @@ def main():
 
                 # Prepare and save the result to the output file.
                 now = datetime.now().strftime("%Y-%m-%dT%H%M")
-                o_filename = '' if num_of_suggestions == 0 or current_keyword != refined_keyword else '!'
-                o_filename += (("%03d - " % index) + current_keyword + " - " + now + " - CSV.csv").replace(' ', '_')
+                o_filename = "%s%03d - " % ('' if final_suggestion is not None else '!', index)
+                o_filename += (current_keyword + " - " + now + " - CSV") \
+                    .replace(' ', '_').replace('.', '') + ".csv"
+                if final_suggestion is None:
+                    o_filename = ".\\unreliable\\" + o_filename
+                else:
+                    o_filename = ".\\reliable\\" + o_filename
                 index += 1
                 if not result.empty:
-                    new_col_name = current_keyword
-                    if final_suggestion is not None:
-                        new_col_name += " (" + final_suggestion + ')'
+                    new_col_name = current_keyword if final_suggestion is None else final_suggestion
                     result.rename(columns={refined_keyword: new_col_name}, inplace=True)
                     result.drop(labels=["isPartial"], axis=1, inplace=True)
                 result.to_csv(o_filename)

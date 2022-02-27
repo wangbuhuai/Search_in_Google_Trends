@@ -3,12 +3,13 @@ TIME END:   2022-02-16
 
 REGION: 
 
-INDEX: 1
+INDEX: 2
 
 SUGGESTIONS:
 
 CEO
 Chief Executive Officer
+Executive
 Chairman
 Owner
 President
@@ -16,4 +17,104 @@ Businessman
 
 KEYWORDS:
 
-Jim Dugan
+Mike Roman
+Kevin J. Wheeler
+Robert B. Ford
+Richard A. Gonzalez
+Julie Sweet
+Bobby Kotick
+Neil Ashe
+Shantanu Narayen
+Thomas R. Greco
+Lisa Su
+Andres Gluski
+Mark Bertolini
+Jay Horgen
+Dan Amos
+Michael R. McMullen
+Seifi Ghasemi
+Frank Thomson Leighton
+Ben Minicucci
+J Kent Masters
+Joel S Marcus
+Ludwig N. Hantson
+Joseph M. Hogan
+David D. Petratis
+Brenton L. Saunders
+Ralph Andretta
+John O. Larsen
+Thomas J. Wilson
+Sundar Pichai
+Sundar Pichai
+Billy Gifford
+Andy Jassy
+Warner L Baxter
+Doug Parker
+Nick Akins
+Stephen Squeri
+Peter Zaffino
+Tom Bartlett
+Susan Hardwick
+James Cracchiolo
+Steven H. Collis
+David A. Zapico
+Robert A. Bradway
+Richard Adam Norwitt
+Jim Hackett
+Vincent Roche
+Gregory J. Goff
+Ajei Gopal
+Gail Koziara Boudreaux
+Gregory C. Case
+John J Christmann
+Wesley W Powell
+Tim Cook
+Gary E. Dickerson
+Kevin P. Clark
+Juan Ricardo Luciano
+John C. Plant
+J. Patrick Gallagher Jr
+Keith W. Demmings
+John T. Stankey
+Andrew Anagnost
+Carlos A. Rodriguez
+William C. Rhodes III
+Timothy J Naughton
+Mitchell R. Butier
+Lorenzo Simonelli
+John A Hayes
+Brian Moynihan
+Jose E. Almeida
+Kelly S. King
+Thomas Polen
+Warren Buffett
+Corie Barry
+Michel Vounatsos
+Larry Fink
+Jeff Jones
+Dave Calhoun
+Frederic Lissalde
+Owen D. Thomas
+Michael F. Mahoney
+Eric Steigerwalt
+Giovanni Caforio
+Hock E. Tan
+Lawson Whiting
+Robert Biesterfeld
+Michael P. Gregoire
+Dan Dinges
+Anirudh Devgan
+Mark Clouse
+Richard Fairbank
+Mike Kaufmann
+William D. Nash
+Arnold W. Donald
+Jim Umpleby
+Edward T. Tilly
+Robert E. Sulentic
+Joseph Ianniello
+Mark J. Alles
+Michael F. Neidorff
+David J. Lesar
+Jeffrey Storey
+
