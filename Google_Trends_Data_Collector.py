@@ -40,7 +40,7 @@ def main():
                     for token in split_name:
                         if token in tokens:
                             count += 1
-                    if count < 2:
+                    if count < 1:
                         continue
                     suggestion_applied = True
                     for sug in suggestions:
